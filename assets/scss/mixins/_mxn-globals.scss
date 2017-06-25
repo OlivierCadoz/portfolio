@@ -1,0 +1,17 @@
+@mixin text-ellipsis($height, $lines) {
+	max-height: $height;
+	overflow: hidden;
+	display: -webkit-box;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+}
+
+@mixin column-count($number, $gap) {
+	column-count: $number;
+    -webkit-column-count: $number;
+    -moz-column-count: $number;
+    column-gap: $gap;
+    -webkit-column-gap: $gap;
+    -moz-column-gap: $gap;
+}
