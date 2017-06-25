@@ -1,0 +1,105 @@
+/*!
+Theme Name: Katumbi
+Author: Olivier Cadoz
+Author URI: http://vingtcinq.io
+Description: A simple and elegant wordpress theme for Katumbi
+Version: 1.0
+Tags: blue, gray, white, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
+Text Domain: Katumbi
+*/
+
+@import "variables";
+
+// Bootstrap
+// Core variables and mixins
+@import "bootstrap/mixins";
+
+// Reset and dependencies
+@import "bootstrap/normalize";
+// @import "bootstrap/print";
+// @import "bootstrap/glyphicons";
+
+// Core CSS
+@import "bootstrap/scaffolding";
+// @import "bootstrap/type";
+// @import "bootstrap/code";
+@import "bootstrap/grid";
+// @import "bootstrap/tables";
+// @import "bootstrap/forms";
+// @import "bootstrap/buttons";
+
+// Components
+// @import "bootstrap/component-animations";
+// @import "bootstrap/dropdowns";
+// @import "bootstrap/button-groups";
+// @import "bootstrap/input-groups";
+// @import "bootstrap/navs";
+// @import "bootstrap/navbar";
+// @import "bootstrap/breadcrumbs";
+// @import "bootstrap/pagination";
+// @import "bootstrap/pager";
+// @import "bootstrap/labels";
+// @import "bootstrap/badges";
+// @import "bootstrap/jumbotron";
+// @import "bootstrap/thumbnails";
+// @import "bootstrap/alerts";
+// @import "bootstrap/progress-bars";
+// @import "bootstrap/media";
+// @import "bootstrap/list-group";
+// @import "bootstrap/panels";
+// @import "bootstrap/responsive-embed";
+// @import "bootstrap/wells";
+// @import "bootstrap/close";
+
+// Components w/ JavaScript
+// @import "bootstrap/modals";
+// @import "bootstrap/tooltip";
+// @import "bootstrap/popovers";
+// @import "bootstrap/carousel";
+
+// Utility classes
+// @import "bootstrap/utilities";
+// @import "bootstrap/responsive-utilities";
+
+
+// Mixins
+@import "mixins/mxn-globals";
+@import "mixins/mxn-pm";
+@import "mixins/mxn-flex";
+@import "mixins/mxn-btn";
+
+// Layout
+@import "layout/header";
+@import "layout/footer";
+@import "layout/globals";
+
+// Modules
+@import "modules/anchor";
+@import "modules/banner";
+@import "modules/bg";
+@import "modules/btn";
+@import "modules/browser";
+@import "modules/card";
+@import "modules/center";
+@import "modules/check-radio";
+@import "modules/editable-content";
+@import "modules/filters";
+@import "modules/flex";
+@import "modules/forms";
+@import "modules/pm";
+@import "modules/tabs";
+@import "modules/text";
+@import "modules/titles";
+@import "modules/utils";
+
+// Pages
+@import "pages/frontpage";
+@import "pages/404";
+@import "pages/contact";
+@import "pages/myth";
+@import "pages/news";
+@import "pages/article";
+@import "pages/katanga";
+@import "pages/commitment";
+@import "pages/biography";
+@import "pages/legal";
