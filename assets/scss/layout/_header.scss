@@ -1,0 +1,100 @@
+.main-header {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: $navbar-height;
+  width: 100%;
+  transition: ease-in-out 0.2s;
+
+  .navbar {
+    height: 100%;
+  }
+
+  &.active {
+    height: 100vh;
+    background-color: $primary;
+
+    .navbar {
+
+      .nav-list {
+        opacity: 1;
+        pointer-events: all;
+      }
+    }
+  }
+
+  .nav-list {
+    height: 100%;
+    float: right;
+
+    li {
+      margin: 0 $x;
+
+      a{
+        font-size: $fs-s;
+        font-weight: $fw400;
+      }
+    }
+
+    @media (max-width: $screen-sm-max) {
+      @include flex-direction(column);
+      @include justify-content(center);
+      width: 100%;
+      opacity: 0;
+      pointer-events: none;
+
+      li {
+        display: block;
+        text-align: center;
+        margin: $s 0;
+
+        a {
+          font-size: $fs-m;
+          padding: $s;
+        }
+      }
+    }
+  }
+
+
+  .burger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    background-color: transparent;
+    padding: 29px;
+    transition: ease-in-out 0.4s;
+
+    .burger-pan {
+      position: relative;
+      height: 3px;
+      width: 30px;
+      background-color: $white;
+
+      &.middle {
+        margin: 7px 0;
+      }
+
+    }
+
+    @media (min-width: $screen-md) {
+      display: none;
+    }
+
+    &.active {
+        .top {
+            transform: translateY(10px) rotate(225deg);
+        }
+        .middle {
+            opacity: 0;
+        }
+        .bottom {
+            transform: translateY(-10px) rotate(-225deg);
+        }
+    }
+
+  }
+
+}

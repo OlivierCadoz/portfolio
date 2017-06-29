@@ -30,11 +30,14 @@ gulp.task('scripts', function() {
         'assets/js/utils.js',
         'assets/js/active-on-scroll.js',
         'assets/js/header.js',
+        'assets/js/burger.js',
         'assets/js/scrollto.js',
         'assets/js/title-parallax.js',
+        'assets/js/img-parallax.js',
+        'assets/js/slider.js',
     ])
     .pipe(sourcemaps.init())
-    .pipe(concat('katumbi.js'))
+    .pipe(concat('portfolio.js'))
     .pipe(gulp.dest('dist'))
     .pipe(uglify())
     .pipe(rename({ extname: '.min.js' }))

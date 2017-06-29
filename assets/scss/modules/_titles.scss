@@ -1,0 +1,21 @@
+.title {
+  font-family: $serif;
+  font-weight: $fw400;
+
+  &.title-h1 {
+    font-size: $fs-xxl;
+    color: $white;
+  }
+
+  &.title-h2 {
+    font-size: $fs-xl;
+    color: $secondary;
+  }
+
+  &.title-h3 {
+    font-size: $fs-m;
+    font-family: $sans-serif;
+    color: $tertiary;
+  }
+
+}

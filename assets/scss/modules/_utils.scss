@@ -1,0 +1,45 @@
+.height-full {
+  height: 100%;
+}
+
+.rel {
+  position: relative;
+}
+
+.inline-block {
+  display:inline-block;
+}
+
+.slide {
+  opacity: 0;
+  transition: ease-out 0.4s;
+
+  &.top{
+    transform: translateY(75px);
+  }
+  &.top-up{
+    transform: translateY(100px);
+  }
+  &.bottom {
+    transform: translateY(-75px);
+  }
+  &.bottom-down {
+    transform: translateY(-100px);
+  }
+  &.right {
+    transform: translateX(-75px);
+  }
+  &.left {
+    transform: translateX(75px);
+  }
+
+  &.active {
+    opacity: 1;
+    transform: none;
+  }
+
+}
+
+.short-trans {
+  transition: ease-in-out 0.4s;
+}

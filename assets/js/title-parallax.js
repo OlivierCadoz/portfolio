@@ -1,11 +1,16 @@
-var $window = $(window),
-    scroll,
-    px;
-
-$window.on('scroll', function(){
-  if ($window.height() >= 640) {
-    scroll = $window.scrollTop();
-    px = (scroll/1.4);
-    $('.js-banner-parallax').css({ 'bottom': px });
+function parallax() {
+  ws = $window.scrollTop();
+  px = ws + 80;
+  if ((ws < sh - 180) && (px < sh - 180)) {
+      $('.js-title').css({ 'top': px/2 });
   }
+}
+
+$(function(){
+  parallax();
+
+  $window.on('scroll', function(){
+    parallax();
+
+  });
 });

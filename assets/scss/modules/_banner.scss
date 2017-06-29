@@ -1,0 +1,13 @@
+.banner {
+
+  &.full-screen {
+    width: 100%;
+    height: 100vh;
+  }
+
+  .title {
+    text-shadow: 0 0 $gray-darker;
+    transition: ease 0.1s;
+  }
+
+}

@@ -1,0 +1,27 @@
+.flexbox {
+  @include flexbox;
+}
+
+.column {
+  @include flex-direction(column);
+}
+
+.wrap {
+  @include flex-wrap(wrap);
+}
+
+.flex-ctr {
+  @include flexbox;
+  @include justify-content(center);
+  @include align-items(center);
+}
+
+.align-ctr {
+  @include flexbox;
+  @include align-items(center);
+}
+
+.justify-ctr {
+  @include flexbox;
+  @include justify-content(center);
+}

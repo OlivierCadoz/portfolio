@@ -8,7 +8,7 @@
             var $that = $(this),
                 offset = ($that.height()*$that.data('offset')) || 50,
                 top = $that.offset().top + offset,
-                toActv = wbottom > top ? true : false;
+                toActv = wb > top ? true : false;
 
             if (toActv) {
                 $that.addClass('active');
@@ -22,8 +22,9 @@
 
         return $(window).scroll(function(e) {
             e.preventDefault();
+            // wb = ws + wh;
             items.map(function(elem, i){
-                if (elem.top <= wbottom) {
+                if (elem.top <= wb) {
                     elem.trigger.addClass('active');
                     // items.splice(i, 1);
                 }

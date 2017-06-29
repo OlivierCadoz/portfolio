@@ -66,7 +66,7 @@ Text Domain: Katumbi
 @import "mixins/mxn-globals";
 @import "mixins/mxn-pm";
 @import "mixins/mxn-flex";
-@import "mixins/mxn-btn";
+// @import "mixins/mxn-btn";
 
 // Layout
 @import "layout/header";
@@ -74,32 +74,32 @@ Text Domain: Katumbi
 @import "layout/globals";
 
 // Modules
-@import "modules/anchor";
+// @import "modules/anchor";
 @import "modules/banner";
 @import "modules/bg";
 @import "modules/btn";
 @import "modules/browser";
-@import "modules/card";
-@import "modules/center";
-@import "modules/check-radio";
-@import "modules/editable-content";
+@import "modules/cards";
+// @import "modules/center";
+// @import "modules/check-radio";
+// @import "modules/editable-content";
 @import "modules/filters";
 @import "modules/flex";
 @import "modules/forms";
 @import "modules/pm";
-@import "modules/tabs";
+@import "modules/parallax";
 @import "modules/text";
 @import "modules/titles";
 @import "modules/utils";
 
 // Pages
 @import "pages/frontpage";
-@import "pages/404";
-@import "pages/contact";
-@import "pages/myth";
-@import "pages/news";
-@import "pages/article";
-@import "pages/katanga";
-@import "pages/commitment";
-@import "pages/biography";
-@import "pages/legal";
+// @import "pages/404";
+// @import "pages/contact";
+// @import "pages/myth";
+// @import "pages/news";
+// @import "pages/article";
+// @import "pages/katanga";
+// @import "pages/commitment";
+// @import "pages/biography";
+// @import "pages/legal";

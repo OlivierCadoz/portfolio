@@ -1,0 +1,40 @@
+.bg-img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-blend {
+  background-color: $primary;
+  background-blend-mode: multiply;
+  -webkit-filter: contrast(0.9);
+  filter: contrast(0.9);
+}
+
+.bg-filter-ie {
+  height: 100%;
+  @media screen and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here*/
+    background-color: rgba($primary, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  @supports (-ms-ime-align:auto) {
+    /* Edge CSS styles go here*/
+    background-color: rgba($primary, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+.bg-primary {
+  background-color: $primary;
+}
+
+.bg-gray-lighter {
+  background-color: $gray-lighter;
+}

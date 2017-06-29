@@ -1,0 +1,22 @@
+.card {
+  max-width: 300px;
+  margin: 0 auto;
+
+  .icon {
+    height: $xl;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: ease-out 0.2s;
+
+    i,
+    p {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    &.active {
+      opacity: 1;
+      transform: none;
+    }
+  }
+}

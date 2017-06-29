@@ -13,8 +13,8 @@ $fs-xxl:          4.5rem;
 $fs-xl:          3.5rem;
 $fs-l:          2.9rem;
 $fs-m:          2.2rem;
-$fs-base:        1.5rem;
-$fs-s:          1.4rem;
+$fs-base:        2rem;
+$fs-s:          1.8rem;
 $fs-x:          1.3rem;
 $fs-us:          1.2rem;
 
@@ -27,9 +27,16 @@ $fw600:         600;
 $fw700:         700;
 
 // Common Letter Spacing
+$ls-xs:        0.025rem;
 $ls-x:         0.05rem;
 $ls-s:         0.1rem;
 $ls-m:         0.15rem;
+
+// Common Letter Spacing
+$ws-xs:        0.025rem;
+$ws-x:         0.05rem;
+$ws-s:         0.1rem;
+$ws-m:         0.15rem;
 
 // Common Line heigth
 $lh1:           1;
@@ -43,11 +50,11 @@ $lh20:           2;
 $lh24:           2.4;
 
 // Custom colors
-$primary:           #0962AC;
-$secondary:         #1073C5;
-$tertiary:          #158AEC;
-$quaternary:        #FF4C4C;
-$date:              #91B2CD;
+$primary:           #00b300;
+$secondary:         #008000;
+$tertiary:          #ff9900;
+// $quaternary:        #FF4C4C;
+// $date:              #91B2CD;
 $white:             #fff;
 
 
@@ -86,7 +93,7 @@ $brand-danger:          #d9534f !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            $secondary !default;
 
 //** Global textual link color.
 $link-color:            $brand-primary !default;
@@ -100,9 +107,10 @@ $link-hover-decoration: underline !default;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:  "Montserrat Alternates", Helvetica, Arial, sans-serif !default;
+$font-family-sans-serif:  "Muli", Helvetica, Arial, sans-serif !default;
 $sans-serif: $font-family-sans-serif;
-$font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
+$font-family-serif:      'Lobster Two', Georgia, "Times New Roman", Times, serif !default;
+$serif: $font-family-serif;
 //** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
