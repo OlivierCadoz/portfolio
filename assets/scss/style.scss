@@ -1,13 +1,3 @@
-/*!
-Theme Name: Katumbi
-Author: Olivier Cadoz
-Author URI: http://vingtcinq.io
-Description: A simple and elegant wordpress theme for Katumbi
-Version: 1.0
-Tags: blue, gray, white, dark, light, one-column, two-columns, right-sidebar, fixed-layout, responsive-layout, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready
-Text Domain: Katumbi
-*/
-
 @import "variables";
 
 // Bootstrap
@@ -69,20 +59,17 @@ Text Domain: Katumbi
 // @import "mixins/mxn-btn";
 
 // Layout
+@import "layout/globals";
 @import "layout/header";
 @import "layout/footer";
-@import "layout/globals";
 
 // Modules
-// @import "modules/anchor";
 @import "modules/banner";
 @import "modules/bg";
 @import "modules/btn";
 @import "modules/browser";
 @import "modules/cards";
-// @import "modules/center";
-// @import "modules/check-radio";
-// @import "modules/editable-content";
+@import "modules/anchor";
 @import "modules/filters";
 @import "modules/flex";
 @import "modules/forms";
@@ -94,12 +81,3 @@ Text Domain: Katumbi
 
 // Pages
 @import "pages/frontpage";
-// @import "pages/404";
-// @import "pages/contact";
-// @import "pages/myth";
-// @import "pages/news";
-// @import "pages/article";
-// @import "pages/katanga";
-// @import "pages/commitment";
-// @import "pages/biography";
-// @import "pages/legal";

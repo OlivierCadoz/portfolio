@@ -25,3 +25,14 @@
   @include flexbox;
   @include justify-content(center);
 }
+
+.grow1 {
+  @include flex-grow(1);
+}
+
+.grow2 {
+  @include flex-grow(2);
+  @media (max-width: $screen-xs-max) {
+    @include flex-grow(1);
+  }
+}

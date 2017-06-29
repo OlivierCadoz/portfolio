@@ -20,7 +20,7 @@
             }
         });
 
-        return $(window).scroll(function(e) {
+        return $(window).on('scroll', function(e) {
             e.preventDefault();
             // wb = ws + wh;
             items.map(function(elem, i){

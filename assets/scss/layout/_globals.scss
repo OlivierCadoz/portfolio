@@ -15,7 +15,6 @@ html {
 
 body {
     margin: 0;
-    // padding-top: $navbar-height;
     font-family: $sans-serif;
     font-size: $fs-base;
     font-weight: $fw400;
@@ -73,9 +72,7 @@ body {
       &:focus,
       &:active {
           text-decoration: none;
-      }
-      &:hover {
-        color: $gray-darker;
+          color: $white;
       }
     }
 }

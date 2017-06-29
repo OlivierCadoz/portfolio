@@ -1,0 +1,50 @@
+.main-footer {
+
+  &.flexbox {
+    @media (max-width: $screen-us-max) {
+      @include flex-direction(column);
+    }
+  }
+
+  a:hover {
+    color: $primary;
+  }
+
+  .media{
+
+    ul {
+
+      li {
+        margin-right: $s;
+        transition: ease-in-out 0.4s;
+
+        &:hover {
+          transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+
+  .p-contact {
+    color: $white;
+    font-size: $fs-us;
+  }
+
+}
+.footer-nav {
+
+  ul {
+
+    li {
+
+      a {
+        font-size: $fs-x;
+      }
+    }
+  }
+
+  .footer-nav-title {
+    font-size: $fs-s;
+    color: $tertiary;
+  }
+}
