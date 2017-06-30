@@ -3,6 +3,8 @@
   &.flexbox {
     @media (max-width: $screen-us-max) {
       @include flex-direction(column);
+      text-align: center;
+      @include align-items(center);
     }
   }
 
@@ -13,10 +15,16 @@
   .media{
 
     ul {
+      @media (max-width: $screen-us-max) {
+        @include justify-content(center);
+      }
 
       li {
         margin-right: $s;
         transition: ease-in-out 0.4s;
+        @media (max-width: $screen-us-max) {
+          margin: 0 $x;
+        }
 
         &:hover {
           transform: rotateY(180deg);
