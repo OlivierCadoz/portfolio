@@ -1,16 +1,28 @@
 function parallax() {
+  navbar();
   ws = $window.scrollTop();
-  px = ws + 80;
-  if ((ws < sh - 180) && (px < sh - 180)) {
+  px = ws + nbh;
+  console.log(nbh);
+  if ((ws < sh - nbh - 100) && (px < sh - nbh - 100)) {
       $('.js-title').css({ 'top': px/2 });
   }
 }
 
+function navbar() {
+  if ($window.width() >= 992) {
+    nbh = 80;
+  } else {
+    nbh = 50;
+  }
+}
+
 $(function(){
+  $window.resize(navbar);
   parallax();
 
   $window.on('scroll', function(){
     parallax();
 
   });
+
 });

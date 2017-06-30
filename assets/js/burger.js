@@ -1,17 +1,24 @@
 function toggleActive(){
   $('.js-header, .js-burger').toggleClass('active');
+  $('.js-body').toggleClass('body-fixed');
 }
-function removeActive(){
+function rmClass(){
   $('.js-header, .js-burger').removeClass('active');
+  $('.js-body').removeClass('body-fixed');
 }
 
 function updateWidth(){
-  minWidthMd(removeActive);
+  minWidthMd(rmClass);
 }
 
 $(function(){
   $('.js-burger').on('click', function(){
     toggleActive();
+  });
+
+  $('.js-scroll-to').on('click', function(){
+    $('.js-header, .js-burger').removeClass('active');
+    $('.js-body').removeClass('body-fixed');
   });
 
 

@@ -53,8 +53,6 @@
   transition: ease-in-out 0.4s;
 }
 
-// .noevent-xs {
-//   @media (min-width: $screen-xs) {
-//     pointer-events: none;
-//   }
-// }
+.body-fixed {
+  overflow: hidden;
+}

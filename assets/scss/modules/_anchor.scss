@@ -1,4 +1,7 @@
 .anchor {
   position: absolute;
   top: -$xl;
+  @media (max-width: $screen-sm-max) {
+    top: -$l;
+  }
 }

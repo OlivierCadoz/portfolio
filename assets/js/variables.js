@@ -5,4 +5,5 @@ var $window = $(window),
     wh = $window.height(),
     wb = ws + wh,
     ww = $window.width(),
-    px = 0;
+    px = 0,
+    nbh = 0;

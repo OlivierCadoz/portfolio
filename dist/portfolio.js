@@ -5,7 +5,8 @@ var $window = $(window),
     wh = $window.height(),
     wb = ws + wh,
     ww = $window.width(),
-    px = 0;
+    px = 0,
+    nbh = 0;
 
 function minWidthMd(fc1, fc2) {
   fc2 = fc2 || (function(){});
@@ -88,18 +89,25 @@ $(function(){
 
 function toggleActive(){
   $('.js-header, .js-burger').toggleClass('active');
+  $('.js-body').toggleClass('body-fixed');
 }
-function removeActive(){
+function rmClass(){
   $('.js-header, .js-burger').removeClass('active');
+  $('.js-body').removeClass('body-fixed');
 }
 
 function updateWidth(){
-  minWidthMd(removeActive);
+  minWidthMd(rmClass);
 }
 
 $(function(){
   $('.js-burger').on('click', function(){
     toggleActive();
+  });
+
+  $('.js-scroll-to').on('click', function(){
+    $('.js-header, .js-burger').removeClass('active');
+    $('.js-body').removeClass('body-fixed');
   });
 
 
@@ -127,31 +135,45 @@ $(function(){
 });
 
 function parallax() {
+  navbar();
   ws = $window.scrollTop();
-  px = ws + 80;
-  if ((ws < sh - 180) && (px < sh - 180)) {
+  px = ws + nbh;
+  console.log(nbh);
+  if ((ws < sh - nbh - 100) && (px < sh - nbh - 100)) {
       $('.js-title').css({ 'top': px/2 });
   }
 }
 
+function navbar() {
+  if ($window.width() >= 992) {
+    nbh = 80;
+  } else {
+    nbh = 50;
+  }
+}
+
 $(function(){
+  $window.resize(navbar);
   parallax();
 
   $window.on('scroll', function(){
     parallax();
 
   });
+
 });
 
 $(function(){
 
   $window.on('scroll', function(){
-    $('.js-img-parallax').each(function(){
-      if (ws >= ($(this).offset().top - 250)) {
-        position = (ws - $(this).offset().top)/10*1.5;
-        $(this).css({'background-position': 'center -' + position + 'px'});
-      }
-    });
+    if ($window.width() >= 768) {
+      $('.js-img-parallax').each(function(){
+        if (ws >= ($(this).offset().top - 250)) {
+          position = (ws - $(this).offset().top)/10*1.5;
+          $(this).css({'background-position': 'center -' + position + 'px'});
+        }
+      });
+    }
   });
 });
 
