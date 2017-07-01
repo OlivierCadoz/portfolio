@@ -2,7 +2,6 @@ function parallax() {
   navbar();
   ws = $window.scrollTop();
   px = ws + nbh;
-  console.log(nbh);
   if ((ws < sh - nbh - 100) && (px < sh - nbh - 100)) {
       $('.js-title').css({ 'top': px/2 });
   }

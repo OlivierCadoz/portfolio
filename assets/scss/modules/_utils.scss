@@ -53,6 +53,10 @@
   transition: ease-in-out 0.4s;
 }
 
+.delay-trans {
+  transition-delay: 0.4s;
+}
+
 .body-fixed {
   overflow: hidden;
 }

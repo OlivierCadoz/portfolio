@@ -1,1 +1,47 @@
+.circle {
+  position: relative;
+  height: $xl;
+  width: $xl;
+  border-radius: 50%;
+  background-color: $tertiary;
+  margin: auto;
 
+  &::before {
+    content: "";
+    z-index: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $white;
+    transition: ease-in-out 1s;
+    transition-delay: 0.4s;
+  }
+
+  img {
+    z-index: 1;
+    position: relative;
+    max-height: 50px;
+    max-width: 50px;
+  }
+
+  &.active {
+
+    &.notion::before {
+      height: 83%;
+    }
+    &.average::before {
+      height: 63%;
+    }
+    &.good::before {
+      height: 43%;
+    }
+    &.advanced::before {
+      height: 23%;
+    }
+    &.expert::before {
+      height: 3%;
+    }
+  }
+}

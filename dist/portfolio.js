@@ -138,7 +138,6 @@ function parallax() {
   navbar();
   ws = $window.scrollTop();
   px = ws + nbh;
-  console.log(nbh);
   if ((ws < sh - nbh - 100) && (px < sh - nbh - 100)) {
       $('.js-title').css({ 'top': px/2 });
   }
@@ -165,16 +164,16 @@ $(function(){
 
 $(function(){
 
-  $window.on('scroll', function(){
-    if ($window.width() >= 768) {
-      $('.js-img-parallax').each(function(){
-        if (ws >= ($(this).offset().top - 250)) {
-          position = (ws - $(this).offset().top)/10*1.5;
-          $(this).css({'background-position': 'center -' + position + 'px'});
-        }
-      });
-    }
-  });
+  // $window.on('scroll', function(){
+  //   if ($window.width() >= 768) {
+  //     $('.js-img-parallax').each(function(){
+  //       if (ws >= ($(this).offset().top - 250)) {
+  //         position = (ws - $(this).offset().top)/10*1.5;
+  //         $(this).css({'background-position': 'center -' + position + 'px'});
+  //       }
+  //     });
+  //   }
+  // });
 });
 
 $(function(){

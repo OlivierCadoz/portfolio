@@ -21,12 +21,15 @@
 
       li {
         margin-right: $s;
-        transition: ease-in-out 0.4s;
         @media (max-width: $screen-us-max) {
           margin: 0 $x;
         }
 
-        &:hover {
+        & i {
+          transition: ease-in-out 0.4s;
+        }
+
+        &:hover i {
           transform: rotateY(180deg);
         }
       }

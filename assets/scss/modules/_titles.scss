@@ -18,4 +18,10 @@
     color: $tertiary;
   }
 
+  &.title-h4 {
+    font-size: $fs-base;
+    font-weight: $fw600;
+    font-family: $sans-serif;
+  }
+
 }
