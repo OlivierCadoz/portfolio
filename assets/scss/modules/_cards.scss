@@ -27,4 +27,7 @@
 
 .card-skill {
   width: 20%;
+  @media (max-width: $screen-xs-max) {
+    width: 50%;
+  }
 }
