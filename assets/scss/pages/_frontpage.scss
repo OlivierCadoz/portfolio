@@ -1,10 +1,73 @@
+.circle1 {
+  height: $xl - 2px;
+  width: $xl - 2px;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.skill {
+  height: $xl;
+  width: $xl;
+  border-radius: 50%;
+  position: absolute;
+  top: $s;
+  left: calc(50% - #{$m});
+  background-color: $tertiary;
+  transform-origin: left;
+  transition: ease-in-out 0.4s;
+
+  .bg-white {
+    height: 100%;
+    width: 100%;
+    transition: ease-in-out 1s;
+    transition-delay: 0.4s;
+
+    &.active {
+
+      &.notion {
+        height: 83%;
+      }
+      &.average {
+        height: 63%;
+      }
+      &.good {
+        height: 43%;
+      }
+      &.advanced {
+        height: 23%;
+      }
+      &.expert {
+        height: 3%;
+      }
+    }
+  }
+
+  .img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+
+    img {
+      display: block;
+      margin: auto;
+      max-height: 50px;
+      max-width: 50px;
+    }
+  }
+}
+
 .circle {
+  z-index: 1;
   position: relative;
   height: $xl;
   width: $xl;
   border-radius: 50%;
   background-color: $tertiary;
   margin: auto;
+  transition: ease-in-out 0.4s;
+  transform-origin: left;
 
   &::before {
     content: "";

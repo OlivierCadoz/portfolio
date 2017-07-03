@@ -30,4 +30,8 @@
   @media (max-width: $screen-xs-max) {
     width: 50%;
   }
+
+  &:hover .skill {
+    transform: rotate(-45deg);
+  }
 }
