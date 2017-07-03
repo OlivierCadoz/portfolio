@@ -10,6 +10,18 @@
       background-position: center 0;
       background-attachment: fixed;
     }
+
+    @media (max-width: $screen-xs-max) {
+      opacity: 0;
+      transform: translateX(-75px);
+      transition: ease-in-out 0.4s;
+
+      &.active {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
   }
 
 }
