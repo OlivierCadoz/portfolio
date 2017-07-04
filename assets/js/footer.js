@@ -11,7 +11,5 @@ $(function(){
 
   footerPos();
 
-  // $window.on('scroll', footerPos());
-
   $window.resize(footerPos);
 });

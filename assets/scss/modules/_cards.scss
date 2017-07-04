@@ -31,7 +31,7 @@
     width: 50%;
   }
 
-  &:hover .skill {
+  &.active .skill {
     transform: rotate(-45deg);
   }
 }

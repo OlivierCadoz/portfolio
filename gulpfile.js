@@ -35,6 +35,7 @@ gulp.task('scripts', function() {
         'assets/js/title-parallax.js',
         'assets/js/img-parallax.js',
         'assets/js/slider.js',
+        'assets/js/skill.js',
         'assets/js/footer.js',
     ])
     .pipe(sourcemaps.init())
