@@ -109,7 +109,13 @@
   }
 }
 
+section.rel {
+  z-index: 1;
+}
+
 .footer-spacer {
+  z-index: 1;
+  position: relative;
   background-color: transparent;
   pointer-events: none;
 }
