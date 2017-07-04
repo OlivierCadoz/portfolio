@@ -203,12 +203,14 @@ $(function(){
     console.log(fh);
 
     if (fh) {
-      $('.js-footer').css({'top': $('.js-section').height() - fh});
+      $('.js-footer').css({'top': $window.height() - fh});
       $('.js-footer-spacer').height(fh);
     }
   }
 
   footerPos();
+
+  $window.on('scroll', footerPos());
 
   $window.resize(footerPos);
 });
