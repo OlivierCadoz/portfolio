@@ -203,7 +203,6 @@ $(function(){
     console.log(fh);
 
     if (fh) {
-      $('.js-footer').css({'top': $window.height() - fh});
       $('.js-footer-spacer').height(fh);
     }
   }
