@@ -1,0 +1,24 @@
+.btn {
+
+  &.grow1 {
+
+    float: left;
+
+    @media (min-width: $screen-sm) {
+      & + .btn.grow1 {
+        border-left: none;
+      }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      width: 100%;
+    }
+  }
+}
+
+.btn-sospets {
+  @include btn($white, $sospets);
+}
+.btn-safir {
+  @include btn($saphir-thick, $white);
+}

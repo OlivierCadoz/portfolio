@@ -60,3 +60,15 @@
 .body-fixed {
   overflow: hidden;
 }
+
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.grow1 {
+  @include flex(1, 0 auto);
+}

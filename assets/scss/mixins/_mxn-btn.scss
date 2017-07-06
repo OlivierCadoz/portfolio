@@ -1,0 +1,12 @@
+@mixin btn($color1, $color2) {
+  padding: $x $s;
+  transition: ease-in-out 0.4s;
+  border: 1px solid $color1;
+  color: $color1;
+  white-space: nowrap;
+  width: auto;
+  &:hover {
+    background-color: $color1;
+    color: $color2;
+  }
+}

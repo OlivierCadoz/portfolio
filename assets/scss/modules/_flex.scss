@@ -36,3 +36,9 @@
     @include flex-grow(1);
   }
 }
+
+.column-mobile {
+  @media (max-width: $screen-xs-max) {
+    @include flex-direction(column);
+  }
+}
