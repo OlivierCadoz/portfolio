@@ -199,7 +199,7 @@ $(function(){
 
 $(function(){
   function footerPos(){
-    var fh = $('.js-footer').height() + 80;
+    var fh = $('.js-footer').outerHeight();
     console.log(fh);
 
     if (fh) {
