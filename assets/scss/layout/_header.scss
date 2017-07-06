@@ -14,20 +14,41 @@
     height: 100%;
   }
 
+  .nav-left {
+    float: left;
+    height: 28px;
+    overflow: hidden;
+    margin-top: 15px;
+    @media (min-width: $screen-md) {
+      margin-top: 25px;
+    }
+
+    li {
+      transition: ease-in-out 0.2s;
+    }
+
+    &:hover {
+
+      li {
+        transform: translateY(-100%);
+      }
+    }
+  }
+
   &.active {
     height: 100vh;
     background-color: $primary;
 
     .navbar {
 
-      .nav-list {
+      .nav-right {
         opacity: 1;
         pointer-events: all;
       }
     }
   }
 
-  .nav-list {
+  .nav-right {
     height: 100%;
     float: right;
 
