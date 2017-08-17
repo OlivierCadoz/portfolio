@@ -1,36 +1,44 @@
 .bio-template {
 
-  .banner {
-    padding-top: 150px;
-  }
-
   .first-circle {
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     border-radius: 50%;
-    background-color: rgba($white, 0.2);
-    margin: auto;
+    background-color: rgba($white, 0.5);
+    position: absolute;
+    bottom: -175px;
+    left: calc(50% - 175px);
   }
 
   .second-circle {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
-    background-color: rgba($white, 0.2);
+    background-color: rgba($white, 0.5);
   }
 
   .third-circle {
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
-    background-color: rgba($white, 0.2);
+    background-color: rgba($white, 1);
   }
 
   .fourth-circle {
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
-    background-color: rgba($white, 0.2);
+    background-color: $white;
+  }
+
+
+  .dev {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: -100px;
+    left: calc(50% - 100px);
   }
 
 }

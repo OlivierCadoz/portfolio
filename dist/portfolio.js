@@ -89,11 +89,11 @@ $(function(){
 
 function toggleActive(){
   $('.js-header, .js-burger').toggleClass('active');
-  $('.js-body').toggleClass('body-fixed');
+  $('.js-body').toggleClass('o-hidden');
 }
 function rmClass(){
   $('.js-header, .js-burger').removeClass('active');
-  $('.js-body').removeClass('body-fixed');
+  $('.js-body').removeClass('o-hidden');
 }
 
 function updateWidth(){
@@ -107,7 +107,7 @@ $(function(){
 
   $('.js-scroll-to').on('click', function(){
     $('.js-header, .js-burger').removeClass('active');
-    $('.js-body').removeClass('body-fixed');
+    $('.js-body').removeClass('o-hidden');
   });
 
 

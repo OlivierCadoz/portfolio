@@ -7,8 +7,8 @@
 .bg-blend {
   background-color: $primary;
   background-blend-mode: multiply;
-  -webkit-filter: contrast(0.9);
-  filter: contrast(0.9);
+  // -webkit-filter: contrast(0.9);
+  // filter: contrast(0.9);
 }
 
 .bg-filter-ie {
